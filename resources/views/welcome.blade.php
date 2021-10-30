@@ -415,10 +415,10 @@
                     <h1>
 
                     @if (Route::has('login') && optional(auth()->user())->id != null)
-                    
-                    <a href="{{ url('/profile/'.auth()->user()->id) }}" >HealthTracker</a>
+
+                        <a href="{{ url('/profile/'.auth()->user()->id) }}" >HealthTracker</a>
                     @else
-                    HealthTracker
+                        HealthTracker
                     @endif
                     </h1>
                 </div>
