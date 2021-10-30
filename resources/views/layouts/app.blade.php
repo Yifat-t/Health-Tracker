@@ -27,7 +27,7 @@
 <body>
     <div id="app">
         <div class="container">
-            @if (session('status'))
+
             <div>
                 <a style="float:right; display:inline-block;"  href="{{ route('logout') }}"
                     onclick="event.preventDefault();
@@ -39,7 +39,7 @@
                     @csrf
                 </form>
             </div>
-            @endif
+
             <a href="/" class="nav-link">Back</a>
             <div class="d-flex justify-center pt-4 align-items-center  sm:pt-0">
                 <h1>HealthTracker</h1>
